@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col  justify-center items-center py-[3rem] ">
+    <div class="container flex flex-col  justify-center items-center  bg-blue-100 w-[16rem] h-[10rem]">
+        <h1 class="text-center">Météo </h1>
+        <div class="flex">
+        <input type="text" id="city" placeholder="Entrez une ville" class="border bg-white ">
+        <button id="searchBtn" class=" bg-blue-500 w-[2rem] h-[1.5rem] rounded-full hover:bg-blue-200 flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <path  d="M17 17L21 21" stroke="black" stroke-width="null" stroke-linecap="round" class="my-path"></path>
+            <path d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="black" stroke-width="null" class="my-path"></path>
+            </svg></button>
+        </div>
+        <div id="weatherInfo"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
