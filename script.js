@@ -7,7 +7,7 @@ searchBtn.addEventListener('click', () => {
     if (city.value.trim() !== '') {
         updateWeatherInfo(city.value);
         city.value = '';
-        city.blur();
+       
     }
 });
 
@@ -15,7 +15,6 @@ city.addEventListener('keyup', (e) => {
     if (e.key === 'Enter' && city.value.trim() !== '') {
         updateWeatherInfo(city.value);
         city.value = '';
-        city.blur();
     }
 });
 
